@@ -1,0 +1,19 @@
+[package]
+name = "harus-bot"
+version = "0.1.0"
+authors = ["azusachino <azusachino@duck.com>"]
+edition = "2021"
+readme = "README.md"
+license-file = "LICENSE"
+repository = "https://github.com/azusachino/harus-bot"
+
+[dependencies]
+anyhow = "1.0"
+dotenv = "0.15"
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+teloxide = { version = "0.12", features = ["macros"] }
+tokio = { version = "1.26", features = ["full"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
